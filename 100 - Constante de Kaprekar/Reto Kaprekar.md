@@ -13,9 +13,9 @@ A este proceso se le conoce como la rutina de Kaprekar, y siempre llegará al n�
 
 Por ejemplo, el número 3524 alcanzará la constante de Kaprekar en 3 iteraciones:
 
-5432 − 2345 = 3087
-8730 − 0378 = 8352
-8532 − 2358 = 6174
+-   5432 − 2345 = 3087
+-   8730 − 0378 = 8352
+-   8532 − 2358 = 6174
 
 Los únicos dígitos de cuatro cifras para los que la rutina de Kaprekar no alcanza el número 6174 son los repdigits, es decir aquellos cuyas cuatro cifras son iguales (como 1111), pues en la primera iteración se alcanzará el valor 0 y no podrá salirse de él. Es por esto que en el paso 1 se pedía explícitamente que el número inicial tuviera al menos dos dígitos diferentes.
 
@@ -23,31 +23,28 @@ El resto de los números de cuatro cifras terminarán siempre en el número 6174
 
 A continuación se muestran dos ejemplos más:
 
-    - El número 1121 necesita 5 iteraciones:
+    El número 1121 necesita 5 iteraciones:
+    * 2111 − 1112 = 0999
+    * 9990 − 0999 = 8991
+    * 9981 − 1899 = 8082
+    * 8820 − 0288 = 8532
+    * 8532 − 2358 = 6174
 
-2111 − 1112 = 0999
-9990 − 0999 = 8991
-9981 − 1899 = 8082
-8820 − 0288 = 8532
-8532 − 2358 = 6174
+    El número 1893 necesita 7 iteraciones:
+    * 9831 − 1389 = 8442
+    * 8442 − 2448 = 5994
+    * 9954 − 4599 = 5355
+    * 5553 − 3555 = 1998
+    * 9981 − 1899 = 8082
+    * 8820 − 0288 = 8532
+    * 8532 − 2358 = 6174
 
-    - El número 1893 necesita 7 iteraciones:
-
-9831 − 1389 = 8442
-8442 − 2448 = 5994
-9954 − 4599 = 5355
-5553 − 3555 = 1998
-9981 − 1899 = 8082
-8820 − 0288 = 8532
-8532 − 2358 = 6174
-
-    - El número 0005 necesita 5 iteraciones:
-
-5000 - 0005 = 4095
-9540 - 0459 = 9081
-9810 - 0189 = 9621
-9621 - 1269 = 8352
-8532 - 2358 = 6174
+    El número 0005 necesita 5 iteraciones:
+    * 5000 - 0005 = 4095
+    * 9540 - 0459 = 9081
+    * 9810 - 0189 = 9621
+    * 9621 - 1269 = 8352
+    * 8532 - 2358 = 6174
 
 # Entrada
 
